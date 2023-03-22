@@ -35,14 +35,17 @@ app.get('/map', (request, response) => {
 })
 
 app.get('/rollDice', (request, response) => {
+    //six sided die? How many are being rolled?
      response.send("Random numbers for your attacking and defending")
 })
 
 app.get('/addArmies/:rolldice', (request, response) => {
+    //how do you know who gaining armies
     response.send("This is how you get more armies")
 })
 
 app.get('/moveArmies/:initialTerritory/:targetTerritory', (request, response) => {
+    //who is moving? Do you have to attack to get there?
      response.send("Attempting to move from initial territory to target territory")
 })
 
